@@ -35,7 +35,7 @@ cd ufc-dashboard`
     
 4.  Run the script to generate the dashboard:
     
-    `python ufcScrapper.py` 
+    `python ufcScraper.py` 
     
 5.  Once the script completes, it will open `index.html` in your default web browser automatically.
     
