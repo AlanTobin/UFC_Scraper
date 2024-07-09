@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC Fighter Dashboard</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.bootstrap5.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#"> UFC </a>
+                </div>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-4 py-3">
+                <form action="#" class="d-none d-sm-inline-block">
+
+                </form>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEXSCwv6+/37///QAADOAADlmZnx1dbfb3D24uPRBgbTAAD69/j6+/7RBAT47/Dwzc7survgfn7rtbbcYmLYRk
+                                ffc3T36uvkk5TnoaLbXFzjjo703N3XPj/VLy/twMHx0tPZUlPoqKnUIiPhhIXdaGnTGBjklpbWODfoq6vaVlfhgYHXRUXTGxvuxsfUJyjrt7iB7/4XAAAFkklEQVR4nO2ba1vbMAyFEysF0hI6WlpKC6VcymAX+P//bt3mONlyr
+                                DjEebY9O+9X40pK7GNJDklCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhJD/HAHoo264gKOYAKttc94b4HrUxP22XDUHVzs7XNyvwFzM+rentr+Yn6+fwuf0CDAxTTaZG56C4WtrWc7BoIdZ9dDk
+                                5mk6CZnzFifCc5P+jqm9w+ZoelbGL1swijHH5U/KzfeHFjRnESfCDyDCC+fOHIy615FNQgNMjeTuF0Mfi5vTD+TlpFqkdyDC8nXIRfgrvLU/KbvwOUcZcrgryEuzdT+dnTRGT40Udu4o3Nunn08ll7PQKfW90itC4KU5d4t0D0b
+                                do82OwiO04iSXwVNqe6UXyEvzxUWoyVCBVMhDKU7ZMnhKOokSYA68NCfVNgRi6R6tHIe/wg/2FYbvQjenJ8hLc+d+WpUhmYVHaNc9Eq62OX0jBF6aK7dIwSM3W3dWdBCN8U9xyjbBU1KTxNmGaF9Ux/1KkSH5GP4KbY5U5OGvMD
+                                2Jc1YAL820OiuQDO3Hdu4oPGWz6x4JV+qb8xxnka5BCC7fRTJUPVp5WRwHsrixEaL8abaGv1PO6Uk2BSY/um2oy1CHysnOAcJ1UOYhSyf4kpbVWaHKUHdA/lTbEoOg59VQLE2PRwvyJ3MZqcr1mdTy6jYZ6g4QrmpLDAPIq2sli
+                                y5D3UF74mzYRTr+ouXVWIZ6KBwQrkiZmd/kJ628b5Ghd5hrClekKt5LpuXVWIbcMSxZMC7La+ZPZTY3FNKnvF+eBLK0/SS5ab7COFW8P0A1r/aU92W3pUN5bw8EIFxmNfA21PLqRO5jlff2QJCmcEWq4r3gvNpFqMlQMTanoRGW
+                                BwIQrjhVvBfYhKhKluwriPBzuQ0X3cv7q+Yr3A68DYGX9bxaLe9BkeCLcOEt783DwNuwe3nvzucu5b3tPQLhMvcDb0Pk5WDlPcifTJwq3otcgxC+VmfFBgznZSs4vOtZHgigvK9tiWEiBF5WeXVRaDKEMlZfhPZAAH3JPqVmCNm
+                                tllerMpRLaHzVgYD6knEuXny0lfdvIMKXchuCjNVDeSAA4foj5X3V3lJlSJ5BhBNI+sku0r+kvH90MagyhJqspqUH9deV90iGyvNZUOF8qy45lD8NXN7Lq+olLO9fywgfwKC+5FB5Pxt4kSIva+V9Y7AmQ7BwvtYjBOX98cARan
+                                l1W3kPhP9MdxcIl7tJHipC5GV1VgCxdDKkZ6zYWjPL+yPlfeWlKkN64YzNNYUr0iW936Re3qsyBDNW/a4PCNfg5T3y0t2FQBl6qsr75uBGXXJIuCYDL9IENCEOp4HkB0TQTW39S6/moN5RglmeSJFjokQImxDL+X584H4HdLb2pR
+                                e6A9zpEaL8abNLxpAkRoieJoS7fgVDannf0lFCwuW/+53G2KAdmhClO2X7HWes6qZCwqVYitG8QV622RWlvG9xCgmXYilG8wZdm7WYdWIpqHB+1SMM/0Yz7Xf3U5lE9Z0eYSmWh8K5qcItTqGjyW8pSkL+jgjdWfGoFs4RInyMEi
+                                H6rEU165JI2GSd6051+DosjfTVLOzRqGZf3FkBv6HSner0uV6k5k1HqTFv7hWiC6lWp1BB6TMVq3mTgVaaj9PaGfyO8j75vmaCd2K85k22Dvye/JBkrDK3CmHhrJf3P6YdtmKYuYjNG9k/B/3Lw2a0rwUgINcKcSqX6603TasT8
+                                9sMEdldzqZHHm6n29nqYTfOfvkPoYtN8y/DbqoP5uajN685yybKWfGL1TbygBmB1vIAc7H+04kQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIf8u3wD5bFP+zsZC7QAAAABJRU5ErkJggg=
+                                =" class="avatar img-fluid" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end rounded">
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-4">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h3 class="fw-bold fs-4 mb-3 text-center">UFC Fighter Dashboard</h3>
+
+                        </div>
+    <!-- Main Content -->
+    <div class="container p-3 my-5 bg-light border border-primary">
+        <!-- DataTable Code starts -->
+        <table id="example" class="table table-striped nowrap" style="width:100%">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>last_opponent</th>
+                    <th>decision</th>
+                    <th>last_date_fought</th>
+                    <th>average_rounds_fought</th>
+                    <th>decision</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+            </main>
+            <footer class="footer mt-auto">
+                <div class="container-fluid">
+                    <div class="row text-body-secondary">
+                        <div class="col-md-6 offset-md-6 text-end">
+                            <a class="text-body-secondary">
+                                <strong>Made by Alan Tobin</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
