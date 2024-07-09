@@ -14,18 +14,14 @@ This project aims to create a dashboard that displays UFC fighter statistics scr
 
 ## Requirements
 
--   Python 3.x
+-   Python 3.7
 -   Requests library (`pip install requests`)
 -   BeautifulSoup library (`pip install beautifulsoup4`)
 
 ## Setup
 
 1.  Clone the repository:
-    
-    bash
-    
-    Copy code
-    
+   
     `git clone https://github.com/your-username/ufc-dashboard.git `<br />`
 cd ufc-dashboard` 
     
