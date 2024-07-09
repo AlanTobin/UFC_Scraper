@@ -1,4 +1,5 @@
 # UFC Dashboard Project
+![screenshot](dashboardIMG.png)
 
 ## Overview
 
