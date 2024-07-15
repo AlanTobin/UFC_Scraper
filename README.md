@@ -45,6 +45,6 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 -   Thanks to [UFC Stats](http://www.ufcstats.com/) for providing the data.
 -   Built as a learning project by Alan Tobin.
--   Utilized Bootstrap and dashboard template created by https://github.com/codzsword/
+-   Utilized Bootstrap and also a dashboard template found here https://github.com/codzsword/
 
 ----------
