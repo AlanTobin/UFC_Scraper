@@ -12,6 +12,8 @@ This project aims to create a dashboard that displays UFC fighter statistics scr
 -   Converts the CSV data into an HTML table (`output.html`) for display in the dashboard.
 -   Integrates the HTML table into `index.html` using Python scripting.
 -   Opens the dashboard (`index.html`) in the default web browser.
+-   Dashboard supports live search and filtering of fighter records directly in the browser.
+-   Re-running the script refreshes the dataset with the latest UFC Stats data.
 
 ## Requirements
 
@@ -23,7 +25,7 @@ This project aims to create a dashboard that displays UFC fighter statistics scr
 
 1.  Clone the repository:
    
-    `git clone https://github.com/your-username/ufc-dashboard.git `<br />`
+    `git clone https://github.com/AlanTobin/UFC_Scraper.git `<br />`
 cd ufc-dashboard` 
     
 3.  Install dependencies:
